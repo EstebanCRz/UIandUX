@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styleForm.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptForm.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <form action="#" method="post">
+        <label for="nom" data-i18n="nomLabel">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom" data-i18n="prenomLabel">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="email" data-i18n="emailLabel">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message" data-i18n="messageLabel">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button id="submitButton" type="submit" data-i18n="submitButtonText">Envoyer</button>
+        <button id="cancelButton" type="reset" data-i18n="cancelButtonText">Annuler</button>
+    </form>
+</div>
+
+</body>
+</html>
