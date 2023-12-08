@@ -3,6 +3,14 @@ var cptCancelButton;
 var goingUp = false;
 
 function validerFormulaire() {
+    var requiredFields = document.querySelectorAll('#nom, #prenom, #email, #message, #telephone, #adresse, #ville, #codePostal');
+
+    for (var i = 0; i < requiredFields.length; i++) {
+        if (requiredFields[i].value.trim() === '') {
+            return false;
+        }
+    }
+
     return true;
 }
 
@@ -19,6 +27,7 @@ window.onload = function () {
             window.location.href = 'result.html';
         } else {
             event.preventDefault();
+            alert("Veuillez remplir les champs correctement");
         }
     });
 
