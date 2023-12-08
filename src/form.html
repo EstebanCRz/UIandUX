@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+        <link id="cssLink" rel="stylesheet" href="styleNormal.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body class="color15">
+        <div class="container color1">
+            <form action="#" method="post">
+                <label for="nom" class="color2">Nom :</label>
+                <input type="text" id="nom" name="nom" required placeholder="lastname">
+                
+                <label for="prenom" class="color3">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required placeholder="prenom">
+                
+                <label for="email" class="color4">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                
+                <label for="message" class="color5">Message :</label>
+                <textarea id="message" name="message" required placeholder="Messaggio"></textarea>
+                
+                <label for="telephone" class="color6">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" required placeholder="телефон">
+                
+                <label for="adresse" class="color7">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required placeholder="住所">
+                
+                <label for="ville" class="color8">Ville :</label>
+                <input type="text" id="ville" name="ville" required placeholder="Vil">
+                
+                <label for="codePostal" class="color9">Code Postal :</label>
+                <input type="text" id="codePostal" name="codePostal" required placeholder="Postleitzahl">
+                
+                <label class="unchanged color10">Age :</label>
+                <label for="option1" class="color11">-18</label>
+                <input type="checkbox" id="-18" name="options" value="-18">
+                
+                <label for="option2" class="color12">18-30</label>
+                <input type="checkbox" id="18-30" name="options" value="18-30">
+                
+                <label for="option3" class="color13">+30</label>
+                <input type="checkbox" id="+30" name="options" value="+30">
+                
+                <button id="submitButton" type="submit">Envoyer</button>
+                <button id="cancelButton" type="reset">Annuler</button>
+            </form>
+        </div>
+        
+        <div class="chat-window color14" id="chatWindow">
+            <div id="reduceChatButton" class="toggle-button">Réduire la fenêtre</div>
+            <div id="increaseChatButton" class="toggle-button">Agrandir la fenêtre</div>
+            <div class="messages" id="messages"></div>
+            <div class="input-box">
+                <input type="text" id="messageInput" placeholder="Tapez votre message...">
+                <button id="messageButton">Envoyer</button>
+                <button id="messageCancelButton">Annuler</button>
+            </div>
+        </div>
+        
+        <div id="safecorner" class="unchanged">
+            <label for="theme" class="unchanged">Thème :</label>
+            <select id="theme" class="unchanged">
+                <option class="unchanged" value="styleNormal.css">Normal</option>
+                <option class="unchanged" value="styleLight.css">Coloré</option>
+                <option class="unchanged" value="styleDark.css">Sombre</option>
+                <option class="unchanged" value="styleEpilepsie.css">Warning Epilepsie</option>
+            </select>
+        </div>
+        
+        <script src="scriptForm.js"></script>
+    </body>
+</html>

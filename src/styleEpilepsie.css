@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submitButton {
+    background-color: red;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: darkred;
+}
+
+#cancelButton {
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: darkgreen;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.toggle-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.messages {
+    height: 150px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #fd3f92;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chat-window button {
+    margin-left: 10px;
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#increaseChatButton {
+    border-radius: 0px;
+    background-color: red;
+}
+
+.chat-window button:hover {
+    background-color: #45a049;
+}
+
+#messageCancelButton {
+    background-color: red;
+}
+
+#safecorner {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#theme {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+
+.color1 {
+    background: red;
+    color: green;
+}
+
+.color2 {
+    background: blue;
+    color: yellow;
+}
+
+.color3 {
+    background: orange;
+    color: purple;
+}
+
+.color4 {
+    background: pink;
+    color: brown;
+}
+
+.color5 {
+    background: cyan;
+    color: black;
+}
+
+.color6 {
+    background: lightcoral;
+    color: darkgreen;
+}
+
+.color7 {
+    background: gold;
+    color: indigo;
+}
+
+.color8 {
+    background: lavender;
+    color: darkslategray;
+}
+
+.color9 {
+    background: salmon;
+    color: midnightblue;
+}
+
+.color10 {
+    background: thistle;
+    color: slateblue;
+}
+
+.color11 {
+    background: slategray;
+    color: coral;
+}
+
+.color12 {
+    background: mediumseagreen;
+    color: darkorange;
+}
+
+.color13 {
+    background: orangered;
+    color: aquamarine;
+}
+
+.color14 {
+    background: darkslateblue;
+    color: darkgoldenrod;
+}
+
+.color15 {
+    background: darkturquoise;
+    color: darkviolet;
+}
